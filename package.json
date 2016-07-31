@@ -1,0 +1,43 @@
+{
+  "name": "rc-listview",
+  "version": "1.0.0",
+  "description": "vertical listview based on react",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --devtool eval --progress --colors --content-base build"
+  },
+  "keywords": [
+    "react",
+    "listview"
+  ],
+  "author": "just-me-cy <chenyao_0511@126.com> (https://github.com/just-me-cy)",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-loader": "^1.4.1",
+    "eslint-plugin-import": "^1.11.1",
+    "eslint-plugin-jsx-a11y": "^1.5.5",
+    "eslint-plugin-react": "^5.2.2",
+    "html-webpack-plugin": "^2.22.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "postcss-loader": "^0.9.1",
+    "react-hot-loader": "^1.3.0",
+    "react-motion": "^0.4.4",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
