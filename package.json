@@ -4,7 +4,7 @@
   "description": "vertical listview based on react",
   "main": "index.js",
   "scripts": {
-    "compile": "rimraf dist && babel src --out-dir dist --source-maps --ignore src/examples",
+    "compile": "rimraf lib && babel src --out-dir lib --source-maps --ignore src/examples",
     "start": "webpack-dev-server --devtool eval --progress --colors --content-base build"
   },
   "repository": {

@@ -1,2 +1,2 @@
-module.exports = require('./dist/lib/EditableListview');
-exports.default = require('./dist/lib/EditableListview');
+module.exports = require('./lib/EditableListview');
+exports.default = require('./lib/EditableListview');
