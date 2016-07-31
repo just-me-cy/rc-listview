@@ -1,7 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import EditableListview from '../lib/EditableListview';
-// import { DATA } from './data';
+import EditableListview from '../src/EditableListview';
 
 const DATA = [
   {

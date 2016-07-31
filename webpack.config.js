@@ -6,7 +6,7 @@ const path = require('path');
 module.exports = {
   devtool: 'source-map',
   entry: [ // 使用双服务器模式 、webpack-dev-server作为资源服务器
-    './src/examples/example.jsx', // 入口文件
+    './examples/example.jsx', // 入口文件
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
   ],
@@ -31,7 +31,7 @@ module.exports = {
       {
         test: /\.jsx$/,
         loaders: ['react-hot', 'babel'],
-        include: /src/,
+        include: [/src/, /examples/],
       }, {
         test: /\.css$/,
         loader: 'style!css',
