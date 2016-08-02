@@ -56,7 +56,7 @@ export default class EditableListview extends Component {
                           isOpened={isOpened}
                           handleToggle={() => this.handleToggle(index)}
                         />
-                        <div style={{ height: `${h}`, overflow: 'scroll' }}>
+                        <div className="listContent" style={{ height: `${h}`, overflow: 'scroll' }}>
                           <ListItemWrap
                             itemArr={itemArr}
                           />

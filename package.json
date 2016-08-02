@@ -4,6 +4,7 @@
   "description": "vertical listview based on react",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --ext .js,.jsx src examples",
     "compile": "rimraf lib && babel src --out-dir lib --source-maps --ignore src/examples",
     "start": "webpack-dev-server --devtool eval --progress --colors --content-base build",
     "test": "mocha --compilers js:babel-register --require ./test/setup.js"

@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount, render } from 'enzyme';
 import { expect } from 'chai';
-import EditableListview from '../src/EditableListview.jsx';
+import EditableListview from '../src/EditableListview';
 import ReactTestUtils from 'react-addons-test-utils';
 
 describe(' 渲染', () => {
@@ -130,8 +130,8 @@ describe(' 渲染', () => {
   it('works for expandable when header was clicked', () => {
     const editableListview = mount(<EditableListview data={DATA} headerAttrName="headerName" itemsAttrName="items" />);
     editableListview.find('div.listHeader').at(0).simulate('click');
-    // expect(editableListview.find('div.listHeader').length).to.equal(5);
-    expect(true);
+    // console.log(editableListview.find('div.listItemContent').at(0).debug());
+    expect(editableListview.find('span.icon').at(0).hasClass('arrow-down')).to.equal(true);
   });
 });
 
