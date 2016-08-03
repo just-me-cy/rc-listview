@@ -7,14 +7,14 @@ $npm install rc-listview
 ```
 ### 属性配置
 - data: Array [{headerName, isOpened, items:[{title,..}], height, ...}] 
-- headerAttrName: String listview每个子元素的标题头属性
-- itemsAttrName: String listView每个子元素内容属性
+- headerAttrName: String Listview每个子元素的标题头属性
+- itemsAttrName: String Listview每个子元素内容属性
 
 ```jsx
 const DATA = [
   {
-    headerName: '办公用品',
-    isOpened: false,
+    headerName: '办公用品', // 头部
+    isOpened: false, //是否默认展开
     items: [{
       title: '铅笔',
     }, {
@@ -32,7 +32,7 @@ const DATA = [
       {
         title: '钢笔',
       }],
-    height: 80,
+    height: 80, // 内容区高度
   },
   {
     headerName: '书籍',
@@ -61,3 +61,5 @@ const DATA = [
 
   render(<EditableListview data={DATA} headerAttrName="headerName" itemsAttrName="items" />, root);
 ```
+### License
+- MIT

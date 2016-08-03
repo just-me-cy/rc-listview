@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import EditableListview from '../src/EditableListview';
+import Listview from '../src/Listview';
 
 const DATA = [
   {
@@ -122,7 +122,7 @@ const DATA = [
 class App extends React.Component {
   render() {
     return (
-      <EditableListview data={DATA} headerAttrName="headerName" itemsAttrName="items" />
+      <Listview data={DATA} headerAttrName="headerName" itemsAttrName="items" />
       );
   }
 }

@@ -2,9 +2,9 @@ import React, { Component, PropTypes } from 'react';
 import ListHeader from './ListHeader';
 import ListItemWrap from './ListItemWrap';
 import { Motion, spring } from 'react-motion';
-import './EditableListview.less';
+import './Listview.less';
 
-export default class EditableListview extends Component {
+export default class Listview extends Component {
   static propTypes = {
     data: PropTypes.array.isRequired,
     headerAttrName: PropTypes.string.isRequired,
