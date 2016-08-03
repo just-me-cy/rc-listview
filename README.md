@@ -59,7 +59,7 @@ const DATA = [
   },
 ];
 
-  render(<EditableListview data={DATA} headerAttrName="headerName" itemsAttrName="items" />, root);
+  render(<Listview data={DATA} headerAttrName="headerName" itemsAttrName="items" />, root);
 ```
 ### License
 - MIT
