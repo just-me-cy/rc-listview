@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ext .js,.jsx src examples",
-    "compile": "rimraf lib && babel src --out-dir lib --source-maps --ignore src/examples",
+    "compile": "rimraf lib && babel src --copy-files --out-dir lib --source-maps --ignore src/examples",
     "start": "webpack-dev-server --devtool eval --progress --colors --content-base build",
-    "test": "mocha --compilers js:babel-register --require ./test/setup.js"
+    "test": "mocha --compilers js:babel-register --require ./test/setup.js --require ignore-styles"
   },
   "repository": {
     "type": "git",
@@ -42,6 +42,7 @@
     "eslint-plugin-jsx-a11y": "^1.5.5",
     "eslint-plugin-react": "^5.2.2",
     "html-webpack-plugin": "^2.22.0",
+    "ignore-styles": "^4.0.0",
     "jsdom": "^9.4.1",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",

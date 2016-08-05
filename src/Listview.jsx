@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import ListHeader from './ListHeader';
 import ListItemWrap from './ListItemWrap';
 import { Motion, spring } from 'react-motion';
-import './Listview.less';
+import './Listview.css';
 
 export default class Listview extends Component {
   static propTypes = {
