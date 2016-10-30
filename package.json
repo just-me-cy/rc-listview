@@ -7,7 +7,8 @@
     "lint": "eslint --ext .js,.jsx src examples",
     "compile": "rimraf lib && babel src --copy-files --out-dir lib --source-maps --ignore src/examples",
     "start": "webpack-dev-server --devtool eval --progress --colors --content-base build",
-    "test": "mocha --compilers js:babel-register --require ./test/setup.js --require ignore-styles"
+    "test": "mocha --compilers js:babel-register --require ./test/setup.js --require ignore-styles",
+    "deploy":"NODE_ENV=production webpack -p --config webpack.product.config.js"
   },
   "repository": {
     "type": "git",
